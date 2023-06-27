@@ -1,0 +1,122 @@
+body { /* Estamos definindo o estilo da tag body - corpo do documento */
+  background-color: #20212b; /* Define a cor de fundo do corpo da página */
+  display: flex; /* Aplica um layout flexível para o elemento body e seus filhos */
+  flex-direction: column; /* Define a direção do fluxo dos elementos filhos para serem organizados em uma coluna */
+  justify-content: center; /* Alinha verticalmente os elementos filhos ao centro do elemento body */
+  align-items: center; /* Alinha horizontalmente os elementos filhos ao centro do elemento body */
+  height: 100vh; /* Define a altura do elemento body como 100% da altura da viewport do navegador */
+  overflow: hidden; /* Esconde qualquer conteúdo que possa transbordar do elemento body */
+}
+
+h1 { /* Estamos definindo o estilo da tag h1 */
+  color: #ffbb00; /* Define a cor do texto dentro dos elementos h1 */
+  font-size: 22px; /* Define o tamanho da fonte para 22 pixels */
+  font-family: "Arial", sans-serif; /* Define a família de fontes a ser usada nos elementos h1 */
+  margin-bottom: 19px; /* Define uma margem inferior de 19 pixels para os elementos h1 */
+  margin-top: 0; /* Remove a margem superior dos elementos h1 */
+}
+
+.calculator { /* Este é um valor do atributo class do html */
+  position: relative; /* Define a posição como relativa para possibilitar o posicionamento absoluto de elementos filhos */
+  max-width: 350px; /* Define a largura máxima do elemento calculator como 350 pixels */
+  padding: 50px; /* Adiciona espaçamento interno de 50 pixels ao elemento calculator */
+  background-color: #242530; /* Define a cor de fundo do elemento calculator */
+  border-radius: 54px; /* Define o raio do arredondamento das bordas do elemento calculator */
+  text-align: center; /* Alinha o conteúdo do elemento calculator ao centro */
+  box-shadow: 0 10px 20px rgb(0 0 0 / 58%); /* Adiciona uma sombra ao elemento calculator */
+  margin-bottom: -69px; /* Move o elemento calculator 69 pixels acima de sua posição normal */
+}
+
+.logo-container {
+  width: 100px; /* Define a largura do elemento logo-container como 100 pixels */
+  height: 100px; /* Define a altura do elemento logo-container como 100 pixels */
+  position: absolute; /* Define a posição como absoluta para possibilitar o posicionamento em relação ao elemento pai */
+  top: 0; /* Alinha o elemento logo-container ao topo do seu elemento pai */
+  left: 50%; /* Alinha o elemento logo-container ao centro horizontal do seu elemento pai */
+  transform: translateX(-50%); /* Move o elemento logo-container 50% da sua própria largura para a esquerda */
+  z-index: 1; /* Define a ordem de empilhamento do elemento logo-container */
+}
+
+.logo-container img {
+  margin-left: -29px; /* Move a imagem 29 pixels para a esquerda em relação à posição normal */
+  margin-bottom: 294px; /* Move a imagem 294 pixels abaixo de sua posição normal */
+  margin-top: -111px; /* Move a imagem 111 pixels acima de sua posição normal */
+  width: 163px; /* Define a largura da imagem como 163 pixels */
+  height: 100px; /* Define a altura da imagem como 100 pixels */
+  /* Adicione outros estilos conforme necessário */
+}
+
+.calculator input {
+  width: 90%; /* Define a largura do input como 90% do seu elemento pai */
+  margin-bottom: 12px; /* Define uma margem inferior de 12 pixels para o input */
+  padding: 12px; /* Adiciona espaçamento interno de 12 pixels ao input */
+  border-radius: 20px; /* Define o raio do arredondamento das bordas do input */
+  font-weight: bold; /* Define o peso da fonte como negrito */
+  background-color: #242530; /* Define a cor de fundo do input */
+  border: 2px solid #ffbb00; /* Define uma borda sólida de 2 pixels com a cor #ffbb00 */
+  font-size: 28px; /* Define o tamanho da fonte para 28 pixels */
+  font-family: "Arial", sans-serif; /* Define a família de fontes a ser usada no input */
+  color: #ffffff; /* Define a cor do texto do input */
+  text-align: center; /* Alinha o texto do input ao centro */
+}
+
+.calculator input:focus {
+  outline: none; /* Remove o contorno ao receber foco */
+  border-color: #5e595c; /* Define a cor da borda quando o input está em foco */
+}
+
+.calculator table {
+  width: 100%; /* Define a largura da tabela como 100% do seu elemento pai */
+}
+
+.calculator button {
+  width: 100%; /* Define a largura do botão como 100% do seu elemento pai */
+  padding: 15px; /* Adiciona espaçamento interno de 15 pixels ao botão */
+  margin-bottom: 10px; /* Define uma margem inferior de 10 pixels para o botão */
+  font-size: 24px; /* Define o tamanho da fonte para 24 pixels */
+  font-family: "Arial", sans-serif; /* Define a família de fontes a ser usada no botão */
+  background-color: #363746; /* Define a cor de fundo do botão */
+  color: #ffbb00; /* Define a cor do texto do botão */
+  border: none; /* Remove a borda do botão */
+  border-radius: 20px; /* Define o raio do arredondamento das bordas do botão */
+  cursor: pointer; /* Mostra um cursor de mão ao passar o mouse sobre o botão */
+  box-shadow: 0 2px 4px rgb(12, 12, 12); /* Adiciona uma sombra ao botão */
+}
+
+.calculator button:hover {
+  background-color: #ffbb00; /* Define a cor de fundo do botão quando o mouse está sobre ele */
+  color: #363746; /* Define a cor do texto do botão quando o mouse está sobre ele */
+}
+
+p.footer {
+  color: #ffffff; /* Define a cor do texto do parágrafo com a classe footer */
+  font-size: 12px; /* Define o tamanho da fonte para 12 pixels */
+  margin-top: 20px; /* Define uma margem superior de 20 pixels para o parágrafo */
+  font-family: "Arial", sans-serif; /* Define a família de fontes a ser usada no parágrafo */
+}
+
+.icon-container {
+  margin-top: 0px; /* Define uma margem superior de 0 pixels para o container de ícones */
+  margin-bottom: 15px; /* Define uma margem inferior de 15 pixels para o container de ícones */
+  margin-right: -7px; /* Move o container de ícones 7 pixels para a esquerda em relação à posição normal */
+}
+
+.icon-container i {
+  font-size: 48px; /* Define o tamanho da fonte dos ícones como 48 pixels */
+  margin-right: 10px; /* Define uma margem direita de 10 pixels para os ícones */
+  color: #ffbb00; /* Define a cor dos ícones */
+}
+
+p.copyrigth {
+  margin-bottom: 1px; /* Define uma margem inferior de 1 pixel para o parágrafo com a classe copyrigth */
+  color: #ffbb00; /* Define a cor do texto do parágrafo com a classe copyrigth */
+  font-size: 10px; /* Define o tamanho da fonte para 10 pixels */
+  margin-top: 20px; /* Define uma margem superior de 20 pixels para o parágrafo */
+  font-family: "Arial", sans-serif; /* Define a família de fontes a ser usada no parágrafo */
+}
+
+.calculator-logo {
+  width: 161px; /* Define a largura do elemento calculator-logo como 161 pixels */
+  height: 61px; /* Define a altura do elemento calculator-logo como 61 pixels */
+  margin-right: -17px; /* Move o elemento calculator-logo 17 pixels para a esquerda em relação à posição normal */
+}

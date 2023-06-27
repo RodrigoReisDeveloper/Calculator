@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML -->
+<html> <!-- Início do elemento raiz do documento HTML -->
+  <head> <!-- Cabeçalho do documento -->
+    <title>Calculadora</title> <!-- Define o título da página -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Importa o arquivo CSS externo -->
+  </head>
+    <body> <!-- Corpo do documento -->
+      <div class="calculator"> <!-- Início do elemento com a classe "calculator" -->
+
+        <div class="logo-container"> <!-- Container do logotipo -->
+          <img src="img/logoreis.svg" alt="Logo da Calculadora"> <!-- Imagem do logotipo da calculadora -->
+        </div>
+        
+        <div class="icon-container"> <!-- Container dos ícones -->
+          <img class="calculator-logo" src="img/html css javascript.svg" alt="Logo da Calculadora"> <!-- Imagem do logotipo da calculadora com HTML, CSS e JavaScript -->
+          <i class="fab fa-html5 fa-3x"></i> <!-- Ícone do HTML -->
+          <i class="fab fa-css3-alt fa-3x"></i> <!-- Ícone do CSS -->
+          <i class="fab fa-js fa-3x"></i> <!-- Ícone do JavaScript -->
+        </div>
+        <h1>CALCULADORA</h1> <!-- Título da calculadora -->
+        <input type="text" id="result" readonly> <!-- Campo de entrada de texto para exibir o resultado -->
+        <table> <!-- Tabela de botões da calculadora -->
+          <tr> <!-- Primeira linha -->
+            <td><button onclick="appendNumber(7)">7</button></td> <!-- Botão para adicionar o número 7 -->
+            <td><button onclick="appendNumber(8)">8</button></td> <!-- Botão para adicionar o número 8 -->
+            <td><button onclick="appendNumber(9)">9</button></td> <!-- Botão para adicionar o número 9 -->
+            <td><button onclick="appendOperator('+')">+</button></td> <!-- Botão para adicionar o operador de adição -->
+          </tr>
+          <tr> <!-- Segunda linha -->
+            <td><button onclick="appendNumber(4)">4</button></td> <!-- Botão para adicionar o número 4 -->
+            <td><button onclick="appendNumber(5)">5</button></td> <!-- Botão para adicionar o número 5 -->
+            <td><button onclick="appendNumber(6)">6</button></td> <!-- Botão para adicionar o número 6 -->
+            <td><button onclick="appendOperator('-')">-</button></td> <!-- Botão para adicionar o operador de subtração -->
+          </tr>
+          <tr> <!-- Terceira linha -->
+            <td><button onclick="appendNumber(1)">1</button></td> <!-- Botão para adicionar o número 1 -->
+            <td><button onclick="appendNumber(2)">2</button></td> <!-- Botão para adicionar o número 2 -->
+            <td><button onclick="appendNumber(3)">3</button></td> <!-- Botão para adicionar o número 3 -->
+            <td><button onclick="appendOperator('*')">*</button></td> <!-- Botão para adicionar o operador de multiplicação -->
+          </tr>
+          <tr> <!-- Quarta linha -->
+            <td><button onclick="appendNumber(0)">0</button></td> <!-- Botão para adicionar o número 0 -->
+            <td><button onclick="appendOperator('.')">.</button></td> <!-- Botão para adicionar o ponto decimal -->
+            <td><button onclick="clearResult()">C</button></td> <!-- Botão para limpar o resultado -->
+            <td><button onclick="appendOperator('/')">/</button></td> <!-- Botão para adicionar o operador de divisão -->
+          </tr>
+          <tr> <!-- Quinta linha -->
+            <td colspan="4"><button onclick="calculateResult()">=</button></td> <!-- Botão para calcular o resultado -->
+          </tr>
+        </table>
+        
+        <p class="copyrigth"> <!-- Parágrafo com a classe "copyrigth" -->
+          © Todos os direitos reservados <b>Rodrigo Reis</b> <!-- Texto de direitos autorais -->
+        </p>  
+        
+      </div> <!-- Fim do elemento com a classe "calculator" -->
+      <script src="script.js"></script> <!-- Importa o arquivo JavaScript externo -->
+    </body> <!-- Fim do corpo do documento -->
+</html> <!-- Fim do elemento raiz do documento HTML -->
